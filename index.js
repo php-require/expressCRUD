@@ -6,7 +6,7 @@ import {checkAuth, handleValidationErrors} from "./utils/index.js";
 import {PostController, UserController} from  "./controllers/index.js";
 
 mongoose.set('strictQuery', false);
-mongoose.connect('mongodb://test:1234@89.223.123.167/blog')
+mongoose.connect('mongodb://test:12345@89.223.123.167/blog')
 .then(()=> {console.log('DB ok')})
 .catch((err)=> {console.log('DB error', err)})
 
